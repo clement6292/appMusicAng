@@ -1,0 +1,39 @@
+.container{
+    margin: 50px;
+}
+
+.affichage{
+    border: 1px ;
+    border-collapse: collapse;
+    padding: 50px;
+    margin: 150px;
+    box-shadow: 2px 2px 5px;
+}
+h1{
+    text-align: center;
+}
+h2{
+    background-color: rgb(238, 148, 234);
+}
+
+nav,ul,li{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+  
+}
+button{
+    margin: 1rem;
+    
+} 
+li{
+    background-color: rgb(63, 222, 193);
+    margin: 1px;
+    padding: 1px;
+}
+.tags{ 
+    display: flex;
+    gap: 2rem; 
+}
+
+

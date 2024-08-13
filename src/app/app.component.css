@@ -1,0 +1,36 @@
+nav{
+    display: flex;
+    gap: 5rem;
+    background-color: rgb(13, 17, 229);
+    justify-content: flex-start;
+    padding: 20px;
+    margin: 20px;
+    font-size: 2rem;
+    
+}
+h1{
+    color: rgb(183, 137, 80);
+    font-size: smaller;
+}
+
+input{
+    margin: 10px;
+    width: 80%;
+    box-shadow: 2px 2px 5px;
+    border-radius: 5px;
+    height: 1.5rem;
+}
+
+button{
+    margin: 10px;
+    box-shadow: 2px 2px 5px;
+    border-radius: 5px;
+    height: 1.5rem; 
+    width: 150px;
+
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
