@@ -6,10 +6,10 @@ import { PageNotFoundComponent } from './composants/page-not-found/page-not-foun
 
 
 const routes: Routes = [
-// {path:'',redirectTo:'/',pathMatch:'full'},
-// {path:'about',component:AboutComponent},
-// {path:'inscription/:id',component:InscriptionComponent},
-// {path:'**',component:PageNotFoundComponent}
+{path:'',redirectTo:'/',pathMatch:'full'},
+{path:'about',component:AboutComponent},
+{path:'inscription',component:InscriptionComponent},
+{path:'**',component:PageNotFoundComponent}
 ];
 
 @NgModule({

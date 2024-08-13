@@ -9,10 +9,20 @@ import { MasterService } from '../services/master.service';
 })
 export class AlbumComponent implements OnInit{
   AlbumList:Album[]=[];
-constructor(private myService:MasterService){}
+  selected?:string
+  album!: Album;
+ 
+
+constructor(private myService:MasterService,private myAside:MasterService){}
+
 ngOnInit(){
 this.AlbumList=this.myService.getAlbum();
-console.log(this.myService.getAlbum());
+}
+
+getDetail(id:string){
+  this.album=this.myAside.getAside(id);
+}
+
 
 }
-}
+

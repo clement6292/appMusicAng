@@ -6,11 +6,15 @@ import { Album } from '../album';
   providedIn: 'root'
 })
 export class MasterService {
-  AlbumList:Album[]=[]
+  AlbumList:Album[]=ALBUMS;
   constructor() { }
+
   getAlbum(){
-    return ALBUMS;
-    // console.log(this.Album);
-    
+    return this.AlbumList;
+  }
+
+  getAside(id:string):Album{
+   const idAlbum = this.AlbumList.filter((e:Album)=> e.id===id)
+   return idAlbum[0];
   }
 }

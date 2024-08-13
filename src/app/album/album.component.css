@@ -1,5 +1,13 @@
 .container{
-    margin: 50px;
+    
+    display: flex;
+    justify-content: center;
+}
+.aside{
+max-width: 50%;
+}
+.principale{
+max-width: 80%;
 }
 
 .affichage{
@@ -33,7 +41,9 @@ li{
 }
 .tags{ 
     display: flex;
+    flex-direction: row;
     gap: 2rem; 
 }
+
 
 

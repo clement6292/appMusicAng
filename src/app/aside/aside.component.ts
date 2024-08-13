@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,input,Input } from '@angular/core';
+import { Album, } from '../album';
+import { MasterService } from '../services/master.service';
 
 @Component({
   selector: 'app-aside',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './aside.component.css'
 })
 export class AsideComponent {
-
-}
+@Input() album!:Album; 
+ }
