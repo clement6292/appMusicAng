@@ -8,6 +8,7 @@ import { AboutComponent } from './composants/about/about.component';
 import { PageNotFoundComponent } from './composants/page-not-found/page-not-found.component';
 import { AlbumComponent } from './album/album.component';
 import { AsideComponent } from './aside/aside.component';
+import { PaginationComponent } from './composants/pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AsideComponent } from './aside/aside.component';
     AboutComponent,
     PageNotFoundComponent,
     AlbumComponent,
-    AsideComponent
+    AsideComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,

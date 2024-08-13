@@ -3,11 +3,9 @@
     display: flex;
     justify-content: center;
 }
-.aside{
-max-width: 50%;
-}
+
 .principale{
-max-width: 80%;
+width: 100%;
 }
 
 .affichage{
