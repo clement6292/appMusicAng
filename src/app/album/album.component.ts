@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ALBUMS } from '../../mock-albums';
 import { Album } from '../album';
 import { MasterService } from '../services/master.service';
 
@@ -23,6 +24,17 @@ getDetail(id:string){
   this.album=this.myAside.getAside(id);
 }
 
+getSearch(e:string){
+  console.log(e);
 
+  if (e.trim()!=="") {
+    this.AlbumList=this.AlbumList.filter(el=>{
+      return el.title.toLowerCase().includes(e.toLowerCase())
+    })
+  }else{
+    this.AlbumList=ALBUMS;
+  }
+  
+}
 }
 

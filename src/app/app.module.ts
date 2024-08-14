@@ -9,6 +9,8 @@ import { PageNotFoundComponent } from './composants/page-not-found/page-not-foun
 import { AlbumComponent } from './album/album.component';
 import { AsideComponent } from './aside/aside.component';
 import { PaginationComponent } from './composants/pagination/pagination.component';
+import { SearchComponent } from './composants/search/search.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { PaginationComponent } from './composants/pagination/pagination.componen
     PageNotFoundComponent,
     AlbumComponent,
     AsideComponent,
-    PaginationComponent
+    PaginationComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

@@ -17,4 +17,5 @@ export class MasterService {
    const idAlbum = this.AlbumList.filter((e:Album)=> e.id===id)
    return idAlbum[0];
   }
+
 }
